@@ -10,78 +10,60 @@
 namespace GoCollegeWebApp {
     
     
-    public partial class AdminEditDetails {
+    public partial class EditCollege {
         
         /// <summary>
-        /// adminEditDetails control.
+        /// collegeName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm adminEditDetails;
+        protected global::System.Web.UI.WebControls.TextBox collegeName;
         
         /// <summary>
-        /// adminName control.
+        /// collgeEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminName;
+        protected global::System.Web.UI.WebControls.TextBox collgeEmail;
         
         /// <summary>
-        /// adminEmail control.
+        /// collegePhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminEmail;
+        protected global::System.Web.UI.WebControls.TextBox collegePhone;
         
         /// <summary>
-        /// adminMobile control.
+        /// collegeMobile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminMobile;
+        protected global::System.Web.UI.WebControls.TextBox collegeMobile;
         
         /// <summary>
-        /// adminPassword control.
+        /// collegeAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminPassword;
+        protected global::System.Web.UI.WebControls.TextBox collegeAddress;
         
         /// <summary>
-        /// adminConfirmPassword control.
+        /// collegebtnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminConfirmPassword;
-        
-        /// <summary>
-        /// CompareValidator1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
-        
-        /// <summary>
-        /// adminbtnSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button adminbtnSubmit;
+        protected global::System.Web.UI.WebControls.Button collegebtnSubmit;
     }
 }

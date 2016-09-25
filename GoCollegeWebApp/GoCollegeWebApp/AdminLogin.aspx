@@ -33,7 +33,7 @@
 					<i class="fa fa-user"></i>
 				</div>
 				<div class="login-mail">					
-                    <asp:TextBox ID="adminPassword" runat="server" placeholder="Password" required=""></asp:TextBox>
+                    <asp:TextBox TextMode="Password" ID="adminPassword" runat="server" placeholder="Password" required=""></asp:TextBox>
 					<i class="fa fa-lock"></i>
 				</div>
 

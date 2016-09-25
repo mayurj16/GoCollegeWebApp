@@ -42,7 +42,7 @@ namespace GoCollegeWebApp
 
                    if (isFirstTimeLogin.Equals("R"))
                    {
-                       Response.Redirect("~/AdminEditDetails.aspx");
+                       Response.Redirect("~/AdminHome.aspx");
                    }
                    else if (isFirstTimeLogin.Equals("A"))
                    {
