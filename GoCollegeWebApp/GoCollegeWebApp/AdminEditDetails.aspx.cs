@@ -1,5 +1,7 @@
-﻿using System;
+﻿using GoCollege_BL;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,6 +11,7 @@ namespace GoCollegeWebApp
 {
     public partial class AdminEditDetails : System.Web.UI.Page
     {
+        AdminBL objadminBL = new AdminBL();
         protected void Page_Load(object sender, EventArgs e)
         {
 

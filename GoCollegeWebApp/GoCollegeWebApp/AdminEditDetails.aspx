@@ -110,7 +110,7 @@
 
                                 </div>
                                 
-                                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator" ControlToCompare="adminPassword" ControlToValidate="adminConfirmPassword"></asp:CompareValidator>
+                                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password Did not match" ControlToCompare="adminPassword" ControlToValidate="adminConfirmPassword"></asp:CompareValidator>
 
                                 <div class="clearfix"></div>
 

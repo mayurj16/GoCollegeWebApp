@@ -23,33 +23,28 @@ namespace GoCollegeWebApp
         {
             if (Page.IsValid)
             {
-                string adminUN, adminPWD;
-
                 // Fetching Values from Text Box
-                adminUN = adminUserName.Text.ToString();
-                adminPWD = adminPassword.Text.ToString();
-
 
                DataView dv = new DataView();
-               dv = objadminBL.AdminLogin(adminUN, adminPWD);
+               dv = objadminBL.AdminLogin(adminUserName.Text.ToString(), adminPassword.Text.ToString());
 
                if (!dv.Count.Equals(0))
-               {                  
-
-                   string isFirstTimeLogin;
-
-                   isFirstTimeLogin = dv[0]["AdminStatus"].ToString();
-
-                   if (isFirstTimeLogin.Equals("R"))
+               {
+                   Session["AdminID"] = dv[0]["AdminID"].ToString();
+                   Session["AdminUserName"] = dv[0]["AdminUserName"].ToString();
+                   if (dv[0]["AdminStatus"].ToString().Equals("R"))
+                   {
+                       Response.Redirect("~/AdminEditDetails.aspx");
+                   }
+                   else if (dv[0]["AdminStatus"].ToString().Equals("A"))
                    {
                        Response.Redirect("~/AdminHome.aspx");
                    }
-                   else if (isFirstTimeLogin.Equals("A"))
-                   {
-                       Response.Redirect("~/AdminHome.aspx");
+               }
+               else
+               {
+                   //Show appropriate error message
 
-                   }
-                   
                }
 
 

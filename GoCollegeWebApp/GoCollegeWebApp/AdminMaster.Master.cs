@@ -9,9 +9,20 @@ namespace GoCollegeWebApp
 {
     public partial class AdminMaster : System.Web.UI.MasterPage
     {
+        public string LabelAdminName
+        {
+            get
+            {
+                return this.lblAdminName.Text;
+            }
+            set
+            {
+                this.lblAdminName.Text = value;
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //lblAdminName.Text = "Hi";
         }
     }
 }

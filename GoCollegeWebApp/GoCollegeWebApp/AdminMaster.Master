@@ -121,7 +121,7 @@
 
 
                                 <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown">
-                                    <span class=" name-caret" id="adminName" runat="server">Admin<i class="caret"></i></span>
+                                    <span class=" name-caret" id="adminName" runat="server"><asp:Label ID="lblAdminName" runat="server"></asp:Label><i class="caret"></i></span>
                                     <span><i class="fa fa-user" style=""></i></span>
 
                                     <img src="images/wo.jpg" class="fa fa-user" alt=""></a>
@@ -174,7 +174,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="SendNotification.aspx" class=" hvr-bounce-to-right"><i class="fa fa-envelope   nav_icon"></i><span class="nav-label">Send Notification</span> </a>
+                                    <a href="AdminSendNotification.aspx" class=" hvr-bounce-to-right"><i class="fa fa-envelope   nav_icon"></i><span class="nav-label">Send Notification</span> </a>
                                 </li>
 
                                 <li>

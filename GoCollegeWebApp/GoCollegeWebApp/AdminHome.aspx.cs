@@ -11,7 +11,15 @@ namespace GoCollegeWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["AdminID"]!=null || Session["AdminUserName"]!=null)
+            {
+                //send sessions to master page
+                Label masterLabelAdminName = this.Master.FindControl("lblAdminName") as Label;
+                masterLabelAdminName.Text = Session["AdminUserName"].ToString();
+                //txtContent.Text = string.Empty;
 
+                //this.Master.LabelAdminName = Session["AdminUserName"].ToString();
+            }
         }
     }
 }
